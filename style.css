@@ -1,0 +1,161 @@
+:root {
+  --main-color: #5855d6;
+  --black-color: #1d2026;
+  --white-color: #fff;
+  --white-color-2: #f6f8fd;
+  --gray-color: #69707d;
+  --red-color: #fb0808;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+.product {
+  max-width: 985px;
+}
+.product__images {
+  flex-basis: 47%;
+}
+
+.display-image img {
+  width: 100%;
+  height: auto;
+}
+
+.slides img:hover {
+  opacity: 0.8;
+}
+
+.slides .active {
+  border: 4px solid var(--main-color);
+  opacity: 0.8;
+}
+
+.product__summary {
+  flex-basis: 45%;
+}
+
+.product__name {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 42px;
+  color: var(--black-color);
+}
+
+.product__desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--gray-color);
+}
+
+.product__discount-price {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  color: var(--black-color);
+  margin-right: 12px;
+}
+
+.product__main-price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-decoration-line: line-through;
+  color: var(--gray-color);
+}
+
+.product__sale-percentage {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  background: var(--red-color);
+  border-radius: 6px;
+  color: var(--white-color);
+  padding: 4px 10px;
+  margin-left: 32px;
+}
+
+.product__checkout {
+  margin-top: 83px;
+}
+
+.product__numbers {
+  width: 157px;
+  height: 56px;
+  background: var(--white-color-2);
+  border-radius: 10px;
+}
+
+.btn-operater {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--black-color);
+  flex-basis: 40%;
+  height: 100%;
+}
+
+#numberPlace {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--black-color);
+}
+
+.button-checkout {
+  background-color: var(--main-color);
+  border-radius: 10px;
+  padding: 18px 42px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--white-color);
+}
+
+.button-checkout img {
+  margin-right: 16px;
+}
+
+@media (max-width: 992px) {
+  .product__summary {
+    margin-top: 32px;
+  }
+  .product__name {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .product__desc {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .product__discount-price {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .product__main-price {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .product__sale-percentage {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .product__checkout {
+    margin-top: 30px;
+  }
+  .product__numbers {
+    width: 100%;
+  }
+  .button-checkout {
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 12px;
+  }
+}
